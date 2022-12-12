@@ -6,7 +6,7 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 13:25:40 by saabail           #+#    #+#             */
-/*   Updated: 2022/12/12 14:31:54 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/12 17:22:47 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 // {
 // 	char	test[] = "tripouille   xxx";
 // 	char	sep[] = " x";
-	
 // 	printf(":%s:\n", ft_strtrim(test, sep));
 // 	return (0);
 // }

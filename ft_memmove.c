@@ -6,7 +6,7 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 19:19:00 by saabail           #+#    #+#             */
-/*   Updated: 2022/12/06 15:55:17 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/12 17:22:30 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
- 
