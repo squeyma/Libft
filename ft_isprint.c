@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: saabail <saabail@student.s19.be>           +#+  +:+       +#+        */
+/*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 16:32:21 by saabail           #+#    #+#             */
-/*   Updated: 2022/10/03 16:34:32 by saabail          ###   ########.fr       */
+/*   Updated: 2022/10/13 14:03:47 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 63)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }

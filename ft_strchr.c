@@ -1,21 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/03 15:50:50 by saabail           #+#    #+#             */
-/*   Updated: 2022/11/28 18:44:47 by saabail          ###   ########.fr       */
+/*   Created: 2022/10/07 12:21:37 by saabail           #+#    #+#             */
+/*   Updated: 2022/10/13 14:33:20 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	else if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
+	size_t	i;
+
+	i = 0;
+	while (i < ft_strlen(s) + 1)
+	{
+		if (s[i] == (char)c)
+			return ((char *) &s[i]);
+		i++;
+	}
+	return (NULL);
 }
+/*
+int	main()
+{
+	const char	s[] = "tripouille";
+	 
+	printf("%s\n", ft_strchr(s, 0));
+	printf("%s\n", strchr(s, 0));
+}*/
