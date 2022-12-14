@@ -6,7 +6,7 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 13:40:11 by saabail           #+#    #+#             */
-/*   Updated: 2022/10/24 19:16:41 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/13 11:14:59 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n + '0', fd);
 	}
 }
-
-/*int	main()
-{
-	ft_putnbr_fd(-589, 1);
-}*/

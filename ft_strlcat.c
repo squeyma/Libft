@@ -6,7 +6,7 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 20:28:30 by saabail           #+#    #+#             */
-/*   Updated: 2022/10/24 19:18:34 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/13 11:15:36 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dst_size + i] = '\0';
 	return (dst_size + srcsize);
 }
-
-/*int	main()
-{
-	char	test[] = "tt";
-	char	test_src[] = "w";
-	
-	printf("%zu\n", ft_strlcat(test, test_src, 1));
-	printf("%zu\n", strlcat(test, test_src, 1));
-}*/

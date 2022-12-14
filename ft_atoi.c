@@ -6,7 +6,7 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 18:36:40 by saabail           #+#    #+#             */
-/*   Updated: 2022/12/06 12:51:25 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/13 11:20:16 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,12 +46,3 @@ int	ft_atoi(const char *str)
 	}
 	return ((int)(nb * sign));
 }
-
-// int	main(void)
-// {
-// 	char	*str;
-
-// 	str = "+1234";
-// 	printf("%d", ft_atoi(str));
-// 	return (0);
-// }

@@ -6,11 +6,9 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 12:15:22 by saabail           #+#    #+#             */
-/*   Updated: 2022/10/24 19:22:25 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/13 11:23:43 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_toupper(int c)
 {

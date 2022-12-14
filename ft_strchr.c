@@ -6,7 +6,7 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 12:21:37 by saabail           #+#    #+#             */
-/*   Updated: 2022/10/13 14:33:20 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/13 11:15:15 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*
-int	main()
-{
-	const char	s[] = "tripouille";
-	 
-	printf("%s\n", ft_strchr(s, 0));
-	printf("%s\n", strchr(s, 0));
-}*/
