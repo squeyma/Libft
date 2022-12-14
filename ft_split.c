@@ -6,13 +6,13 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 11:38:41 by saabail           #+#    #+#             */
-/*   Updated: 2022/11/28 16:57:25 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/14 11:10:12 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_sizetab(char const *s, char c)
+static int	ft_sizetab(char const *s, char c)
 {
 	size_t	i;
 	size_t	size;
@@ -33,7 +33,7 @@ int	ft_sizetab(char const *s, char c)
 	return (size);
 }
 
-void	ft_free(char **split)
+static void	ft_free(char **split)
 {
 	size_t	i;
 
@@ -46,7 +46,7 @@ void	ft_free(char **split)
 	free(split[i]);
 }
 
-void	ft_tabsplit(char **split, char const *s, char c)
+static void	ft_tabsplit(char **split, char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
@@ -89,11 +89,17 @@ char	**ft_split(char const *s, char c)
 	ft_tabsplit(split, s, c);
 	return (split);
 }
-
-/*int	main()
+/*
+#include <stdio.h>
+int	main(void)
 {
-	char	test[] = " tripouille 42 ";
-	char	sep[] = "tf";
-	
-	printf("%s\n", ft_split(test, sep));
+	char	**split;
+	char	test[] = "hlello1";
+	char	sep = 'c';
+	int	i;
+
+	i = 0;
+	split = ft_split(test, sep);
+	while (i < 3)
+		printf("%s\n", split[i++]);
 }*/

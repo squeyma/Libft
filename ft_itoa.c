@@ -6,13 +6,13 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 14:14:54 by saabail           #+#    #+#             */
-/*   Updated: 2022/12/13 11:14:50 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/14 11:14:36 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	size_int(int n)
+static int	size_int(int n)
 {
 	int	nb;
 	int	count;
@@ -36,7 +36,7 @@ static unsigned int	ft_convert(int n)
 	return (n);
 }
 
-void	tab_zero(char **tab)
+static void	tab_zero(char **tab)
 {
 	*tab = malloc(sizeof(char) * 2);
 	if (!(*tab))

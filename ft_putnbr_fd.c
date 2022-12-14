@@ -6,13 +6,11 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 13:40:11 by saabail           #+#    #+#             */
-/*   Updated: 2022/12/13 11:14:59 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/14 11:16:26 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	ft_putchar_fd(char c, int fd);
 
 void	ft_putnbr_fd(int n, int fd)
 {

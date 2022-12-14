@@ -6,13 +6,13 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 13:25:40 by saabail           #+#    #+#             */
-/*   Updated: 2022/12/13 11:16:00 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/14 10:40:38 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_checkchar(char c, const char *set)
+static int	ft_checkchar(char c, const char *set)
 {
 	size_t	i;
 
