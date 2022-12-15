@@ -6,7 +6,7 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 08:38:26 by saabail           #+#    #+#             */
-/*   Updated: 2022/12/13 12:49:31 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/15 16:35:40 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_lstsize(t_list *lst)
 	int	lstsize;
 
 	if (!lst)
-		return (NULL);
+		return (0);
 	lstsize = 0;
 	while (lst)
 	{

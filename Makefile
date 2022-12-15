@@ -6,7 +6,7 @@
 #    By: saabail <saabail@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/05 10:46:06 by saabail           #+#    #+#              #
-#    Updated: 2022/12/14 13:27:49 by saabail          ###   ########.fr        #
+#    Updated: 2022/12/15 16:31:13 by saabail          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,6 +69,9 @@ LIBC = ar -rcs
 OBJS = ${SRCS:.c=.o}
 
 RM = rm -f
+
+.c.o:
+	${C} ${FLAGS} -c $< -o ${<:.c=.o}
 	
 ${NAME} : ${OBJS}
 		${LIBC} ${NAME} ${OBJS}
