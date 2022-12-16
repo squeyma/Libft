@@ -6,7 +6,7 @@
 /*   By: saabail <saabail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 11:38:41 by saabail           #+#    #+#             */
-/*   Updated: 2022/12/14 11:10:12 by saabail          ###   ########.fr       */
+/*   Updated: 2022/12/16 12:04:41 by saabail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,20 +33,19 @@ static int	ft_sizetab(char const *s, char c)
 	return (size);
 }
 
-static void	ft_free(char **split)
+static char	**ft_free(char **split, size_t j)
 {
 	size_t	i;
 
 	i = 0;
-	while (split[i])
-	{
-		free(split[i]);
-		i++;
-	}
-	free(split[i]);
+	while (i < j)
+		free(split[i++]);
+	free(split);
+	split = NULL;
+	return (split);
 }
 
-static void	ft_tabsplit(char **split, char const *s, char c)
+static char	**ft_tabsplit(char **split, char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
@@ -63,16 +62,16 @@ static void	ft_tabsplit(char **split, char const *s, char c)
 				j++;
 			split[line] = malloc(sizeof(char) * (j + 1));
 			if (!split[line])
-				return (ft_free(split));
+				return (ft_free(split, line));
 			ft_memcpy(split[line], s + i, j);
-			split[line][j] = 0;
+			split[line++][j] = 0;
 			i += j;
-			line++;
 		}
 		else
 			i++;
 	}
 	split[line] = 0;
+	return (split);
 }
 
 char	**ft_split(char const *s, char c)
@@ -86,7 +85,7 @@ char	**ft_split(char const *s, char c)
 	split = malloc(sizeof(char *) * (size + 1));
 	if (!split)
 		return (NULL);
-	ft_tabsplit(split, s, c);
+	split = ft_tabsplit(split, s, c);
 	return (split);
 }
 /*
@@ -102,4 +101,5 @@ int	main(void)
 	split = ft_split(test, sep);
 	while (i < 3)
 		printf("%s\n", split[i++]);
-}*/
+}
+*/
